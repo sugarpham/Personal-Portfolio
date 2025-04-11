@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francis - Home</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* PAGE-SPECIFIC STYLES */
+    .intro {
+      text-align: center;
+      margin: auto 0;
+      padding: 20px 0;
+    }
+
+    .intro h1 {
+      color: #DCDBCF;
+      font-size: 75px;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    .intro p {
+      color: #FECE00;
+      font-size: 40px;
+      margin-top: 0;
+    }
+
+    .start-btn {
+      text-align: right;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .start-btn a {
+      text-decoration: none;
+      background-color: #252525;
+      color: #FECE00;
+      padding: 15px 30px;
+      font-size: 24px;
+      border-radius: 15px;
+      display: inline-block;
+      transition: all 0.3s ease;
+      transform: scale(1);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .start-btn a:hover {
+      background-color: #1e1e1e;
+      transform: scale(1.05);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .intro h1 {
+        font-size: 50px;
+      }
+      
+      .intro p {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .intro h1 {
+        font-size: 36px;
+      }
+      
+      .intro p {
+        font-size: 24px;
+      }
+      
+      .start-btn a {
+        padding: 12px 24px;
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Francis Logo">
+      </div>
+    </div>
+
+    <div class="intro">
+      <h1>Hi. I'm Francis.</h1>
+      <p>Gamer & Developer</p>
+    </div>
+
+    <div class="start-btn">
+      <a href="about.html">Explore</a>
+    </div>
+  </div>
+
+</body>
+</html>

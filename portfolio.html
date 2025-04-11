@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Francis | Portfolio</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* PORTFOLIO-SPECIFIC STYLES */
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .portfolio-card {
+      background-color: #252525;
+      border-radius: 12px;
+      padding: 25px;
+      transition: all 0.3s ease;
+      color: #DCDBCF;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+    
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(254, 206, 0, 0.2);
+    }
+    
+    .portfolio-card h3 {
+      color: #FECE00;
+      margin-top: 0;
+      font-size: 22px;
+      border-bottom: 1px solid #3a3b40;
+      padding-bottom: 10px;
+    }
+    
+    .portfolio-card ul {
+      padding-left: 20px;
+    }
+    
+    .portfolio-card li {
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    
+    .tech-stack {
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px dashed #3a3b40;
+    }
+    
+    .tech-stack span {
+      font-weight: bold;
+      color: #FECE00;
+    }
+    
+    /* Back to Top Button */
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #252525;
+      padding: 12px;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    
+    .back-to-top a {
+      color: #FECE00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+      display: block;
+      width: 24px;
+      height: 24px;
+      text-align: center;
+      line-height: 24px;
+    }
+    
+    @media (max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        gap: 20px;
+      }
+      
+      .portfolio-card {
+        padding: 20px;
+      }
+      
+      .back-to-top {
+        display: block;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .content {
+        margin-top: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Francis Logo">
+      </div>
+      
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="content">
+      <div class="portfolio-card">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Programming Fundamentals (C, HTML, CSS)</li>
+          <li>PC Hardware Troubleshooting & Maintenance</li>
+          <li>Operating System Installation & Configuration</li>
+          <li>Software Deployment & System Administration</li>
+          <li>Basic Network Configuration</li>
+        </ul>
+      </div>
+
+      <div class="portfolio-card">
+        <h3>Education</h3>
+        <ul>
+          <li>BS in Information Technology - Our Lady of Fatima University (Current)</li>
+          <li>Senior High School - ICT Track (2020-2022)</li>
+          <li>Introduction to IT – Online courses via platforms like Coursera (Completed)</li>
+          <li>Basic Programming – Participated in coding challenges and workshops (In Progress)</li>
+        </ul>
+      </div>
+
+      <div class="portfolio-card">
+        <h3>Projects & Achievements</h3>
+        <ul>
+          <li>Developed a console-based library management system (C Programming)</li>
+          <li>Developed a console-based menu program in C with 10 different interactive options</li>
+          <li>PC building and troubleshooting for friends/family</li>
+          <li>Volunteered as an IT assistant for school events (Providing technical support for school activities)</li>
+        </ul>
+      </div>
+
+      <div class="portfolio-card">
+        <h3>Professional Interests</h3>
+        <p>As a first-year IT student, I’m eager to expand my skills in programming, system administration, and software development. I’m particularly interested in cloud computing, cybersecurity, and full-stack development, and I look forward to deepening my knowledge in these areas.</p>        <div class="tech-stack">
+          <span>Areas of Interest:</span>
+          <ul>
+            <li>Cybersecurity</li>
+            <li>Hardware Troubleshooting</li>
+            <li>Embedded Systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Mobile Back-to-Top -->
+    <div class="back-to-top">
+      <a href="#">↑</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-name">Francis Barquilla</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 All rights reserved <!-- Update year manually -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

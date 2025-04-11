@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Francis</title>
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* ABOUT-SPECIFIC STYLES */
+    .about-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      flex: 1; /* Key change - makes it fill available space */
+    }
+
+    .photo-frame {
+      background-color: #252525;
+      border-radius: 20px;
+      padding: 20px;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .photo-frame img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .vertical-label {
+      color: #252525;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      display: flex;
+      align-items: center;
+      padding: 0 5px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+      margin-right: -10px;
+      white-space: nowrap;
+      height: auto;
+    }
+
+    .about-details {
+      color: #DCDBCF;
+      max-width: 420px;
+      text-align: justify;
+    }
+
+    .name-heading {
+      color: #FECE00;
+      font-size: 32px;
+      margin: 0 0 20px 0;
+    }
+
+    .back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #252525;
+      padding: 10px 15px;
+      border-radius: 50%;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+
+    .back-to-top a {
+      color: #FECE00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    @media (max-width: 900px) {
+      .about-content {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .vertical-label {
+        writing-mode: horizontal-tb;
+        transform: none;
+        margin: 10px 0;
+        padding: 0;
+        font-size: 14px;
+        justify-content: center;
+      }
+
+      .photo-frame {
+        width: 280px;
+        height: 280px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .back-to-top {
+        display: block;
+      }
+      
+      .photo-frame {
+        width: 240px;
+        height: 240px;
+      }
+      
+      .about-details {
+        padding: 0 10px;
+      }
+    }
+
+    .about-content {
+      margin-top: 2.5rem; /* Adjust this value as needed */
+    }
+
+    @media (max-width: 768px) {
+    .about-content {
+    margin-top: 1.5rem;
+    /* Adjust this value as needed */
+      }
+    }
+    
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <img src="images/logo.png" alt="Francis Logo">
+      </div>
+      
+      <nav>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="burger-button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="about.html" class="active">ABOUT</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="about-content">
+      <div class="photo-frame">
+        <img src="images/francis.png" alt="Francis">
+      </div>
+      
+      <div class="vertical-label">KNOW MORE ABOUT ME</div>
+      
+      <div class="about-details">
+        <h2 class="name-heading">I'm Francis.</h2>
+        <p>A 20-year-old BSIT student at Our Lady of Fatima University, Quezon City. Born and raised in Payatas, I have a strong passion for technology and its ever-evolving landscape.</p>
+        <p>I enjoy playing games, listening to music, and watching videos in my free time. I also love playing the guitar and exploring anything related to computers, whether it's hardware, software, or coding. Always eager to learn, I'm continuously improving my skills and knowledge in the tech world.</p>
+      </div>
+    </div>
+    
+    <div class="back-to-top">
+      <a href="#">↑</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-name">Francis Barquilla</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-copyright">
+        &copy; 2025 All rights reserved <!-- Update year manually -->
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
